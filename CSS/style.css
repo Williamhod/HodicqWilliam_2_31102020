@@ -1,0 +1,58 @@
+/* Définition des polices personnalisées */
+* { 
+    font-family: 'Raleway', ; 
+    }
+/* Eléments principaux de la page */
+
+
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#Logo{
+    margin-top: 30px;
+}
+
+#Logo img{ 
+    width: 93px;
+    height: 32px;
+
+}
+
+/* Navigation */
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav li
+{
+   margin-right: 80px;
+   margin-top: 30px;
+    
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #0065FC;
+    text-decoration: none;
+}
+nav a:hover
+{
+    border-top: #0065FC solid;
+    padding-top: 54px;   
+}
+nav a:active{
+    color: black;
+}
+nav a:visited{
+
+}
+/* Corps */
+/* Footer */
