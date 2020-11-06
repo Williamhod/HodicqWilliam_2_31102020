@@ -299,10 +299,10 @@ nav a:visited{
     display:none;
 }
 .img_auberge{
-    background-image:url("../accomodation/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
+    background-image:url("../Accomodation/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
 } 
 .img_hotelport{
-    background-image:url("../accomodation/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
+    background-image:url("../Accomodation/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
 } 
 .img_hotelmouettes{
     background-image:url("../Accomodation/reisetopia-B8WIgxA_PFU-unsplash.jpg")
@@ -311,7 +311,7 @@ nav a:visited{
     background-image:url("../Accomodation/annie-spratt-Eg1qcIitAuA-unsplash.jpg")
 } 
 .img_aubergepanier{
-    background-image:url("../accomodation/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
+    background-image:url("../Accomodation/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
 } 
 .img_hotelamina{
     background-image:url("../Accomodation/febrian-zakaria-M6S1WvfW68A-unsplash.jpg")
@@ -323,7 +323,7 @@ nav a:visited{
     background-image: url("../Accomodation/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
 .img_hotelbleu{
-    background-image: url("../accomodation/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-image: url("../Accomodation/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 /*show more*/
 #show_more a{
