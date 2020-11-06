@@ -1,11 +1,12 @@
-/* Font */
-* { 
-    font-family: 'Raleway', ; 
-    }
-/* Eléments principaux de la page */
-
-
-
+/*body set up */
+body{
+    font-family: 'Raleway', sans-serif;
+    width:90%;
+    max-width: 1450px;
+    min-width:1000px;
+    background-color: white;
+    margin: 0 auto;
+}
 /* Header */
 header{
     display: flex;
@@ -14,6 +15,7 @@ header{
 }
 #Logo{
     margin-top: 30px;
+    margin-left: 20px;
 }
 
 #Logo img{ 
@@ -22,7 +24,8 @@ header{
 
 }
 
-/* Navigation */
+/* Nav menu */
+
 nav ul
 {
     list-style-type: none;
@@ -46,13 +49,337 @@ nav a
 nav a:hover
 {
     border-top: #0065FC solid;
-    padding-top: 54px;   
+    padding-top: 42px;   
 }
 nav a:active{
     color: black;
 }
+
 nav a:visited{
+ color:black;
+}
+
+/* Search Area */
+#Titlesearch{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+#button_search{
+    font-size: 1.4em;
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-color: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: -10px;
+    padding: 7px 10px 14px 10px;
+    
+    
+}
+.loca_icone{
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    block-size: 47px;
+    padding:13px 20px 15px 20px;
+}
+#site-search{
+
+    block-size: 47px;
+    margin: -5px;
+    
+}
+::placeholder{
+    font-size: 1.1em;   
+}
+
+/*Filter*/
+#filter{
+    display: flex;
+    margin-top: 32px;
+    width: auto;
+   
+}
+#filter h3{
+
+    margin-right: 32px;
+}
+
+
+/*filter button*/
+.button_filter{
+    display: flex;
+}
+.icone{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    font-size: 14px;
+    border-radius: 35px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    padding: 15px;
+    position:relative;
+}
+/*Eco button*/
+#button_eco{
+    border: rgb(217, 217, 217) solid;
+    font-size: 15px;
+    padding: 13px 11px 13px 0px;
+    border-left: none;
+    width: 150px;
+    margin-left: -35px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 20px;
+    text-align: end;
+    margin-right: 20px;
+    
+}
+
+#button_eco:hover{
+    background-color: #0065FC;
+}
+#button_eco:active{
+    background-color: #0065FC;
+}
+/*Family*/
+#button_family{
+    border: rgb(217, 217, 217) solid;
+    font-size: 15px;
+    padding: 13px 11px 13px 0px;
+    border-left: none;
+    width: 115px;
+    margin-left: -35px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 20px;
+    text-align: end;
+    margin-right: 20px;
+}
+
+#button_family:hover{
+    background-color: #0065FC;
+}
+#button_family:active{
+    background-color: #0065FC;
+}
+/*Romantic*/
+#button_romantic{
+    border: rgb(217, 217, 217) solid;
+    font-size: 15px;
+    padding: 13px 11px 13px 0px;
+    border-left: none;
+    width: 150px;
+    margin-left: -38px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 20px;
+    text-align: end;
+    margin-right: 20px;
+}
+
+#button_romantic:hover{
+    background-color: #0065FC;
+}
+#button_romantic:active{
+    background-color: #0065FC;
+}
+/*Animal*/
+
+#button_animal{
+    border: rgb(217, 217, 217) solid;
+    font-size: 15px;
+    padding: 13px 11px 13px 0px;
+    border-left: none;
+    width: 190px;
+    margin-left: -35px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 20px;
+    text-align: end;
+}
+
+#button_animal:hover{
+    background-color: #0065FC;
+}
+#button_animal:active{
+    background-color: #0065FC;
+}
+/*general accomodation*/
+#general_accommodation{
+    display: flex;
+}
+#accomodation h2{
+ margin: 40px 20px;
+}
+/*Accomodation*/
+#accomodation{
+    width:60%;
+    height: 650px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-right: 50px;
+    padding: 0 20px;
+}
+/*card*/
+#accomodation_card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 27%;
+    height: 200px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 12px black;
+    margin: 10px 10px 10px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card h4{
+    color: black;
+    padding: 3px 5px 0px 5px ;
+    margin: 5px 0;
+}
+.prix{
+    color: black;
+    padding: 5px 10px 0;
+}
+.card:hover{
+    box-shadow: 3px 3px 12px #0065FC
+}
+.star{
+    color: #0065FC;
+    padding: 5px 10px 0;
+}
+
+
+
+/*card accomodation img*/
+#accomodation .img{
+    width: 100%;
+    height: 115px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+.img{
+    background-size: cover;
+    background-position: center center;
+}
+.img img{
+    display:none;
+}
+.img_auberge{
+    background-image:url("../accomodation/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
+} 
+.img_hotelport{
+    background-image:url("../accomodation/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
+} 
+.img_hotelmouettes{
+    background-image:url("../Accomodation/reisetopia-B8WIgxA_PFU-unsplash.jpg")
+} 
+.img_hotelmer{
+    background-image:url("../Accomodation/annie-spratt-Eg1qcIitAuA-unsplash.jpg")
+} 
+.img_aubergepanier{
+    background-image:url("../accomodation/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
+} 
+.img_hotelamina{
+    background-image:url("../Accomodation/febrian-zakaria-M6S1WvfW68A-unsplash.jpg")
+}
+.img_hotelsoleil{
+    background-image:url("../Accomodation/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg")
+}
+.img_chambreleau{
+    background-image: url("../Accomodation/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+.img_hotelbleu{
+    background-image: url("../accomodation/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+/*show more*/
+#show_more a{
+    text-decoration: none;
+    color: black;
+}
+#show_more{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 40px 20px;
+}
+#show_more a:hover{
+    font-size: 25px;
+    color: #0065FC;
+}
+/*Aside pupolair_accomodation*/
+aside{
+    width: 33%;
+    height: 650px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 
 }
-/* Corps */
+#popular_accomodation{ 
+    display: flex;
+    flex-direction: column;
+}
+.card_pop{   
+    width: 90%;
+    height: 150px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 12px black;
+    margin: 0px 10px 30px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+}
+.card_pop .img{
+        width: 30%;
+        height: 150px;
+        border-radius: 15px 0px 0px 15px;
+        -webkit-border-radius: 15px 0px 0px 15px;
+        -moz-border-radius: 15px 0px 0px 15px;
+        -ms-border-radius: 15px 0px 0px 15px;
+        -o-border-radius: 15px 0px 0px 15px;
+}
+.popcard_text{
+    width: 55%;
+    height: 150px;
+}
+
 /* Footer */
