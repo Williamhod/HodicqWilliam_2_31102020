@@ -5,15 +5,12 @@
     background-color: white;
     margin: 0 auto;
 }
-#bloc_footer{
-    font-family: 'Raleway', sans-serif;
-}
-
 /* Header */
 header{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 25px;
 }
 #Logo{
      margin-left: 20px;
@@ -34,9 +31,9 @@ nav ul
 
 nav li
 {
-  padding-right: 80px;
+  
    color: #0065FC;
-    
+
 }
 
 nav a
@@ -44,16 +41,17 @@ nav a
     font-size: 1.3em;
     color: #0065FC;
     text-decoration: none;
+    padding:0 25px;
 }
 nav a:hover
 {
     border-top: #0065FC solid;
-    padding-top: 42px;   
+    padding-top: 38px;   
 }
+
 nav a:active{
     color: black;
 }
-
 
 /* Search Area */
 #Titlesearch{
@@ -61,6 +59,13 @@ nav a:active{
     flex-direction: column;
     padding-left: 20px;
     
+}
+#search_text h1{
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+#search_text p{
+    margin-top:5px;
 }
 #button_search{
     font-size: 1.4em;
@@ -71,23 +76,28 @@ nav a:active{
     box-shadow: none;
     border: none;
     margin-bottom: -10px;
-    padding: 7px 10px 14px 10px;
-    
-    
+    padding: 7px 10px 13px 10px;
 }
 .loca_icone{
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding:13px 20px 15px 20px;
+    padding:14.5px 18px;
 }
 #site-search{
     height: 47px;
-    margin: -5px;  
+    margin: -5px; 
+    width: 19%; 
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
 }
+
 /*Filter*/
 #filter{
     display: flex;
+    align-items: baseline;
     margin-top: 32px;
     width: auto;
    
@@ -99,35 +109,38 @@ nav a:active{
 
 
 /*filter button*/
-.button_filter{
-    display: flex;
-}
-
 #filter .fas{
     padding: 15px;
     width: 15px;
     background-color: #deebff;
-    margin-left: -8px;
-    margin-top: -2px;
-    margin-bottom: -2px;
-    margin-right: 5px;
+    margin:-2px 5px -2px -8px;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
     color: #0065FC;
+    margin-right: 10px;
+    
 }
-#filter button { 
-    border-radius: 25px;
+#filter button {
     background-color: white;
-    padding: 0px 6px;
+    padding: 0px 20px 0px 5px;
     border: rgb(217, 217, 217) solid;
+    height: 100%;
+    margin-right: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
 }
-#button:hover{
+#filter button:hover{
     background-color: #0065FC;
 }
-#button:active{
+#filter button:active{
     background-color: #0065FC;
 }
 /*filter info text*/
@@ -139,6 +152,9 @@ nav a:active{
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+}
+#filter_info{
+    margin: 35px 0;
 }
 /*general accomodation*/
 #general_accommodation{
@@ -208,6 +224,9 @@ nav a:active{
     -moz-border-radius: 15px 15px 0 0;
     -ms-border-radius: 15px 15px 0 0;
     -o-border-radius: 15px 15px 0 0;
+}
+#accomodation{
+    margin-bottom: 35px;
 }
 
 /* all cards img*/
@@ -279,6 +298,10 @@ nav a:active{
     color: #0065FC;
 }
 /*Aside popular_accomodation*/
+.card_pop a{
+    text-decoration: none;
+    color: black;
+}
 #pop_title{ 
     display: flex;
     justify-content: space-between;
@@ -318,8 +341,10 @@ aside{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    display: flex;
     
+}
+.card_pop a{
+    display: flex;
 }
 .card_pop .img{
         width: 40%;
@@ -355,6 +380,10 @@ aside{
 #activity{
     width: 100%;
     height: 620px;
+}
+#activity a{
+    text-decoration: none;
+    color: black;
 }
 #activity_card{
     width: 100%;
@@ -422,11 +451,14 @@ article#frioul{
 
 /* Footer */
 footer{
+
+    font-family: 'Raleway', sans-serif;
+    width:100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #f2f2f2;
     align-items: stretch;
-    padding: 20px 30px;
+    padding: 20px 12%;
 }
 
 footer>div{
