@@ -67,6 +67,9 @@ nav a:active{
 #search_text p{
     margin-top:5px;
 }
+#searchbox{
+    display: inline-block;
+}
 #button_search{
     font-size: 1.4em;
     background-color: #0065FC;
@@ -82,13 +85,12 @@ nav a:active{
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding:14.5px 18px;
+    padding:13.1px 18px;
 }
 #site-search{
-    height: 47px;
+    height: 45px;
     margin: -5px; 
     width: 19%; 
-    font-size: 16px;
     padding-left: 20px;
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
@@ -403,6 +405,7 @@ aside{
     -ms-border-radius: 15px 15px 15px 15px;
     -o-border-radius: 15px 15px 15px 15px;
     box-shadow: 3px 3px 12px #F2F2F2;
+
 }
 #activity article:hover{
     box-shadow: 3px 3px 12px #0065FC
@@ -447,6 +450,12 @@ article#frioul{
 
 #activity .twocard_2 .img{
     height: 170px;
+}
+/*activity text qui deborde*/
+#activity_card h3{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 /* Footer */
