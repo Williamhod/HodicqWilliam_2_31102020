@@ -1,9 +1,7 @@
 /*body set up */
-body{
+#bloc_page{
     font-family: 'Raleway', sans-serif;
-    width:90%;
-    max-width: 1450px;
-    min-width:1000px;
+    max-width: 1310px;
     background-color: white;
     margin: 0 auto;
 }
@@ -12,16 +10,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 25px;
 }
 #Logo{
-    margin-top: 30px;
-    margin-left: 20px;
+     margin-left: 20px;
 }
 
 #Logo img{ 
-    width: 93px;
-    height: 32px;
-
+    width: 110px;
 }
 
 /* Nav menu */
@@ -35,9 +31,9 @@ nav ul
 
 nav li
 {
-   margin-right: 80px;
-   margin-top: 30px;
-    
+  
+   color: #0065FC;
+
 }
 
 nav a
@@ -45,18 +41,16 @@ nav a
     font-size: 1.3em;
     color: #0065FC;
     text-decoration: none;
+    padding:0 25px;
 }
 nav a:hover
 {
     border-top: #0065FC solid;
-    padding-top: 42px;   
-}
-nav a:active{
-    color: black;
+    padding-top: 38px;   
 }
 
-nav a:visited{
- color:black;
+nav a:active{
+    color: black;
 }
 
 /* Search Area */
@@ -66,40 +60,46 @@ nav a:visited{
     padding-left: 20px;
     
 }
+#search_text h1{
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+#search_text p{
+    margin-top:5px;
+}
+#searchbox{
+    display: inline-block;
+}
 #button_search{
     font-size: 1.4em;
     background-color: #0065FC;
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-color: none;
     box-shadow: none;
     border: none;
     margin-bottom: -10px;
-    padding: 7px 10px 14px 10px;
-    
-    
+    padding: 7px 10px 13px 10px;
 }
 .loca_icone{
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    block-size: 47px;
-    padding:13px 20px 15px 20px;
+    padding:13.1px 18px;
 }
 #site-search{
-
-    block-size: 47px;
-    margin: -5px;
-    
-}
-::placeholder{
-    font-size: 1.1em;   
+    height: 45px;
+    margin: -5px; 
+    width: 19%; 
+    padding-left: 20px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*Filter*/
 #filter{
     display: flex;
+    align-items: baseline;
     margin-top: 32px;
     width: auto;
    
@@ -111,113 +111,52 @@ nav a:visited{
 
 
 /*filter button*/
-.button_filter{
-    display: flex;
-}
-.icone{
-    background-color: #DEEBFF;
-    color: #0065FC;
-    font-size: 14px;
-    border-radius: 35px;
+#filter .fas{
+    padding: 15px;
+    width: 15px;
+    background-color: #deebff;
+    margin:-2px 5px -2px -8px;
+    border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
-    padding: 15px;
-    position:relative;
-}
-/*Eco button*/
-#button_eco{
-    border: rgb(217, 217, 217) solid;
-    font-size: 15px;
-    padding: 13px 11px 13px 0px;
-    border-left: none;
-    width: 150px;
-    margin-left: -35px;
-    background-color: white;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 20px;
-    text-align: end;
-    margin-right: 20px;
+    color: #0065FC;
+    margin-right: 10px;
     
 }
-
-#button_eco:hover{
-    background-color: #0065FC;
-}
-#button_eco:active{
-    background-color: #0065FC;
-}
-/*Family*/
-#button_family{
-    border: rgb(217, 217, 217) solid;
-    font-size: 15px;
-    padding: 13px 11px 13px 0px;
-    border-left: none;
-    width: 115px;
-    margin-left: -35px;
+#filter button {
     background-color: white;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 20px;
-    text-align: end;
-    margin-right: 20px;
-}
-
-#button_family:hover{
-    background-color: #0065FC;
-}
-#button_family:active{
-    background-color: #0065FC;
-}
-/*Romantic*/
-#button_romantic{
+    padding: 0px 20px 0px 5px;
     border: rgb(217, 217, 217) solid;
-    font-size: 15px;
-    padding: 13px 11px 13px 0px;
-    border-left: none;
-    width: 150px;
-    margin-left: -38px;
-    background-color: white;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 20px;
-    text-align: end;
-    margin-right: 20px;
+    height: 100%;
+    margin-right: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
 }
-
-#button_romantic:hover{
+#filter button:hover{
     background-color: #0065FC;
 }
-#button_romantic:active{
+#filter button:active{
     background-color: #0065FC;
 }
-/*Animal*/
-
-#button_animal{
-    border: rgb(217, 217, 217) solid;
-    font-size: 15px;
-    padding: 13px 11px 13px 0px;
-    border-left: none;
-    width: 190px;
-    margin-left: -35px;
-    background-color: white;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 20px;
-    text-align: end;
-}
-
-#button_animal:hover{
+/*filter info text*/
+#filter_info>i{
+    color:#f2f2f2;
     background-color: #0065FC;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
-#button_animal:active{
-    background-color: #0065FC;
+#filter_info{
+    margin: 35px 0;
 }
 /*general accomodation*/
 #general_accommodation{
@@ -288,9 +227,12 @@ nav a:visited{
     -ms-border-radius: 15px 15px 0 0;
     -o-border-radius: 15px 15px 0 0;
 }
+#accomodation{
+    margin-bottom: 35px;
+}
 
 /* all cards img*/
-
+        /*i use a background position to center all picture element on the card*/
 .img{
     background-size: cover;
     background-position: center center;
@@ -325,6 +267,24 @@ nav a:visited{
 .img_hotelbleu{
     background-image: url("../Accomodation/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
+.img_vieuxport{
+    background-image: url("../Activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+.img_fortpomegue{
+    background-image: url("../Activity/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+.img_ilesfrioul{
+    background-image: url("../Activity/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+.img_parcnationnalcalanques{
+    background-image: url("../Activity/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+.img_notredamedelagarde{
+    background-image: url("../Activity/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+.img_parclongchamp{
+    background-image: url("../Activity/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
 /*show more Accomodation*/
 #show_more a{
     text-decoration: none;
@@ -340,6 +300,10 @@ nav a:visited{
     color: #0065FC;
 }
 /*Aside popular_accomodation*/
+.card_pop a{
+    text-decoration: none;
+    color: black;
+}
 #pop_title{ 
     display: flex;
     justify-content: space-between;
@@ -379,8 +343,10 @@ aside{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    display: flex;
     
+}
+.card_pop a{
+    display: flex;
 }
 .card_pop .img{
         width: 40%;
@@ -397,12 +363,131 @@ aside{
     margin: 0 20px;
     padding: 0px 30px 0px 0px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .popcard_text h4{
     margin-bottom: 5px;
 }
 .star_pop{
         color: #0065FC;
-        margin-top: 40px;
+        padding-bottom: 5px;
+       
 }
+.card_pop:hover{
+    box-shadow: 3px 3px 12px #0065FC
+}
+/*Activity*/
+#activity{
+    width: 100%;
+    height: 620px;
+}
+#activity a{
+    text-decoration: none;
+    color: black;
+}
+#activity_card{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+#activity_card > div { /* Les 4 colonnes d'images */
+    width:22%;
+}
+
+#activity article {/*Touslesarticles*/
+    margin: 0 0 40px;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -ms-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    box-shadow: 3px 3px 12px #F2F2F2;
+
+}
+#activity article:hover{
+    box-shadow: 3px 3px 12px #0065FC
+}
+#activity h3 { /* les textes  pour qu'il fasse 50px*/
+    margin:0 auto;
+    padding:14px 20px;
+    
+}
+
+#activity .img{
+    /*pardefaut*/width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+/* taille des articles */
+#activity_card > twocard_2 > article {
+    height: 220px;
+}
+
+article#pomegue {
+    height: 280px ;
+}
+article#frioul{
+    height: 160px;
+}
+
+/* taille des images */
+#activity .one_card .img{
+    height: 430px;
+}
+#pomegue .img{
+    height: 230px;
+}
+#frioul .img{
+    height: 110px;
+}
+
+#activity .twocard_2 .img{
+    height: 170px;
+}
+/*activity text qui deborde*/
+#activity_card h3{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 /* Footer */
+footer{
+
+    font-family: 'Raleway', sans-serif;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    align-items: stretch;
+    padding: 20px 12%;
+}
+
+footer>div{
+    width: 31%;
+}
+footer ul{
+    list-style: none;
+    list-style-position: unset;
+    padding: 0px;
+    
+}
+footer li{
+    padding-bottom: 5px;
+}
+
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer li a:hover{
+    color: #0065FC;
+}
