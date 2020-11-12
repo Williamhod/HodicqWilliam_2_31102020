@@ -21,6 +21,10 @@ header{
 }
 
 /* Nav menu */
+nav{
+    display: flex;
+    align-items: center;
+}
 
 nav ul
 {

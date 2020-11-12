@@ -31,8 +31,7 @@ nav ul{
     padding: 0;
     margin: 0;
 }
-
-nav li{
+nav li,nav div{
    margin: 0 30px;
    padding: 0;
    
@@ -48,6 +47,9 @@ nav a:hover{
    
 }
 /*Search*/
+#site-search{
+    width: 30%;
+}
 #filter{
     width: 100%;
     display: flex;
