@@ -72,8 +72,10 @@ nav a:active{
     margin-top:5px;
 }
 #searchbox{
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
+
 #button_search{
     font-size: 1.4em;
     background-color: #0065FC;
@@ -82,19 +84,24 @@ nav a:active{
     border-bottom-right-radius: 15px;
     box-shadow: none;
     border: none;
-    margin-bottom: -10px;
-    padding: 7px 10px 13px 10px;
+    margin: 0;
+    padding: 4.5px 10px 11.5px 10px;
+    border:1px #0065FC solid;
 }
+#button_search::before{
+    content:"Rechercher";
+}
+
 .loca_icone{
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding:13.1px 18px;
+    padding:13px 18px 13px 18px;
 }
 #site-search{
     height: 45px;
-    margin: -5px; 
-    width: 19%; 
+    margin: 0 -5px; 
+    width: 140px; 
     padding-left: 20px;
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
