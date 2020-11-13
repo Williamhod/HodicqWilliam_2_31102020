@@ -26,29 +26,22 @@ nav{
     align-items: center;
 }
 
-nav ul
-{
+nav ul{
     list-style-type: none;
-    display: flex;
-    
+    display: flex;  
 }
 
-nav li
-{
-  
+nav l{
    color: #0065FC;
-
 }
 
-nav a
-{
+nav a{
     font-size: 1.3em;
     color: #0065FC;
     text-decoration: none;
     padding:0 25px;
 }
-nav a:hover
-{
+nav a:hover{
     border-top: #0065FC solid;
     padding-top: 38px;   
 }
@@ -61,8 +54,7 @@ nav a:active{
 #Titlesearch{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    
+    padding-left: 20px;   
 }
 #search_text h1{
     margin-bottom: 0px;
@@ -113,13 +105,10 @@ nav a:active{
     align-items: baseline;
     margin-top: 32px;
     width: auto;
-   
 }
 #filter h3{
-
     margin-right: 32px;
 }
-
 
 /*filter button*/
 #filter .fas{
@@ -133,8 +122,7 @@ nav a:active{
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
     color: #0065FC;
-    margin-right: 10px;
-    
+    margin-right: 10px;   
 }
 #filter button {
     background-color: white;
@@ -296,7 +284,7 @@ nav a:active{
 .img_parclongchamp{
     background-image: url("../Activity/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
-/*show more Accomodation*/
+/*show more in Accomodation part*/
 #show_more a{
     text-decoration: none;
     color: black;
@@ -389,7 +377,7 @@ aside{
 .card_pop:hover{
     box-shadow: 3px 3px 12px #0065FC
 }
-/*Activity*/
+/*Activity part*/
 #activity{
     width: 100%;
     height: 620px;
@@ -404,11 +392,11 @@ aside{
     display: flex;
     justify-content: space-around;
 }
-#activity_card > div { /* Les 4 colonnes d'images */
+#activity_card > div { /* the 4 columns of picture */
     width:22%;
 }
 
-#activity article {/*Touslesarticles*/
+#activity article {/*all article in activity part*/
     margin: 0 0 40px;
     border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
@@ -421,14 +409,14 @@ aside{
 #activity article:hover{
     box-shadow: 3px 3px 12px #0065FC
 }
-#activity h3 { /* les textes  pour qu'il fasse 50px*/
+#activity h3 { /* to make text areas as 50px*/
     margin:0 auto;
     padding:14px 20px;
     
 }
 
 #activity .img{
-    /*pardefaut*/width: 100%;
+    /*default*/width: 100%;
     height: 200px;
     border-radius: 15px 15px 0 0;
     -webkit-border-radius: 15px 15px 0 0;
@@ -436,7 +424,7 @@ aside{
     -ms-border-radius: 15px 15px 0 0;
     -o-border-radius: 15px 15px 0 0;
 }
-/* taille des articles */
+/* size of article  activity part*/
 #activity_card > twocard_2 > article {
     height: 220px;
 }
@@ -448,7 +436,7 @@ article#frioul{
     height: 160px;
 }
 
-/* taille des images */
+/* size of picture  activity part */
 #activity .one_card .img{
     height: 430px;
 }
@@ -462,7 +450,7 @@ article#frioul{
 #activity .twocard_2 .img{
     height: 170px;
 }
-/*activity text qui deborde*/
+/*activity overflowing text*/
 #activity_card h3{
     white-space: nowrap;
     text-overflow: ellipsis;

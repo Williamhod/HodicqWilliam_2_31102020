@@ -136,6 +136,53 @@ aside{
 .prix{
     padding-left: 5px;
 }
+/*Activity*/
+#activity>h2{
+    margin-left: 20px;
+}
+#activity{
+    width:100%;
+    height: auto;
+}
+#activity_card{
+    height: auto;
+}
+#activity_card > div {
+
+    width: 90%;
+}
+.one_card:nth-child(1)
+{
+    order: 0;
+}
+/*size of picture from activity part*/
+#activity .img{
+    height: 130px;
+}
+#activity .one_card .img{
+    height: 130px;
+}
+#pomegue .img{
+    height: 130px;
+}
+#frioul .img{
+    height: 130px;
+}
+
+#activity .twocard_2 .img{
+    height: 130px;
+}
+/* size of article from activity part*/
+#activity_card > twocard_2 > article {
+    height: 200px;
+}
+
+article#pomegue {
+    height: 200px ;
+}
+article#frioul{
+    height: 200px;
+}
 /*footer*/
 footer{
     display: flex;
