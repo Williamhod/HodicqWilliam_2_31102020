@@ -40,6 +40,9 @@ nav a{
     text-decoration: none;
     padding:0 25px;
 }
+#link2>a{
+    color: black;
+}
 nav a:hover{
     border-top: #0065FC solid;
     padding-top: 38px;   
