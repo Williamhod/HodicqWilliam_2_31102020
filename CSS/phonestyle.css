@@ -1,0 +1,194 @@
+@media only screen and (max-width: 430px){
+/*i saw by inspect element a phone max width as 414px so i injust it a little be more*/
+#bloc_page {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+}
+body{
+    margin:0;
+}
+/*header*/
+header {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+#Logo{
+    padding: 20px 20px;
+    width: 40%;    
+}
+nav{
+    flex-direction: column;
+    width: 100%;
+}
+nav li:not(:last-child) {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px #f2f2f2 solid;
+    padding-bottom: 10px;
+}
+li#login {
+    margin-top: -100px;
+    font-weight: 800;
+}
+nav li:not(:last-child):hover{
+    border-bottom: 2px #0065FC solid;
+}
+nav a:hover{
+    border-bottom: none;
+    border-top: none;
+}
+/*search*/
+#Titlesearch{
+    padding: 0 20px;
+}
+#search_text{
+    margin-bottom: 10px;
+}
+#searchbox form{
+    width:100%;
+}
+#site-search{
+    width: calc(100% - 100px)
+}
+#button_search{
+    width: 45px;
+    height: 45px;
+    color: white;
+    margin: -1.5px 0 0 -10px;
+    vertical-align: middle;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#button_search::before{
+    content:url("../CSS/svg/search.svg");
+    filter: invert(100%);
+    display: block;
+    width: 15px;
+    margin: 0 auto;
+}
+
+/*filter*/
+#filter button{
+    margin: 0px 8px 15px 0;
+}
+
+#filter h3{
+    width: 100%;
+}
+#Titlesearch p{
+    display: flex;
+    
+}
+#Titlesearch >p>i{
+    height: 16px;
+    margin-right: 10px;
+}
+/*popular Accomodation*/
+aside{
+    width: 100%;
+    margin: 5px 0;
+    height: auto;
+}
+.card_pop .img{
+    width: 45%;
+    height: 130px;
+}
+.card_pop{  
+    height: 130px;
+    width: 85%;
+}
+.popcard_text{
+    margin: 0;
+    padding: 0 0 0 20px;
+    height: auto;
+}
+.star_pop{
+    font-size: 11px;
+}
+/*Accomodation*/
+#accomodation{
+    background-color: white;
+}
+.card{
+    width: 100%;
+    height: 200px;
+    text-align: left;
+}
+#accomodation .img{
+    height: 115px;
+}
+.star{
+    font-size:11px;
+    padding-left: 5px;
+}
+.prix{
+    padding-left: 5px;
+}
+/*Activity*/
+#activity>h2{
+    margin-left: 20px;
+}
+#activity{
+    width:100%;
+    height: auto;
+}
+#activity_card{
+    height: auto;
+}
+#activity_card > div {
+
+    width: 90%;
+}
+.one_card:nth-child(1)
+{
+    order: 0;
+}
+/*size of picture from activity part*/
+#activity .img{
+    height: 130px;
+}
+#activity .one_card .img{
+    height: 130px;
+}
+#pomegue .img{
+    height: 130px;
+}
+#frioul .img{
+    height: 130px;
+}
+
+#activity .twocard_2 .img{
+    height: 130px;
+}
+/* size of article from activity part*/
+#activity_card > twocard_2 > article {
+    height: 200px;
+}
+
+article#pomegue {
+    height: 200px ;
+}
+article#frioul{
+    height: 200px;
+}
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+}
+footer div{
+    width: 100%;
+}
+footer li{
+    padding: 5px 0;
+}
+}

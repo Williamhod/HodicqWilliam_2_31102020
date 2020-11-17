@@ -1,58 +1,489 @@
-/* Définition des polices personnalisées */
-* { 
-    font-family: 'Raleway', ; 
-    }
-/* Eléments principaux de la page */
-
-
-
+/*body set up */
+#bloc_page{
+    font-family: 'Raleway', sans-serif;
+    max-width: 1310px;
+    background-color: white;
+    margin: 0 auto;
+}
 /* Header */
 header{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    margin-top: 25px;
 }
 #Logo{
-    margin-top: 30px;
+     margin-left: 20px;
 }
 
 #Logo img{ 
-    width: 93px;
-    height: 32px;
-
+    width: 110px;
 }
 
-/* Navigation */
-nav ul
-{
-    list-style-type: none;
+/* Nav menu */
+nav{
     display: flex;
-    
+    align-items: center;
 }
 
-nav li
-{
-   margin-right: 80px;
-   margin-top: 30px;
-    
+nav ul{
+    list-style-type: none;
+    display: flex;  
 }
 
-nav a
-{
+nav l{
+   color: #0065FC;
+}
+
+nav a{
     font-size: 1.3em;
     color: #0065FC;
     text-decoration: none;
+    padding:0 25px;
 }
-nav a:hover
-{
+#link2>a{
+    color: black;
+}
+nav a:hover{
     border-top: #0065FC solid;
-    padding-top: 54px;   
+    padding-top: 38px;   
 }
+
 nav a:active{
     color: black;
 }
-nav a:visited{
+
+/* Search Area */
+#Titlesearch{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;   
+}
+#search_text h1{
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+#search_text p{
+    margin-top:5px;
+}
+#searchbox{
+    display: flex;
+    align-items: center;
+}
+
+#button_search{
+    font-size: 22px;
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: none; 
+    padding:4.75px 10px 11.5px 10px;
+    border:1px #0065FC solid;
+}
+
+#button_search::before{
+    content:"Rechercher";
+}
+
+.loca_icone{
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding:13px 18px 13px 18px;
+}
+#site-search{
+    height: 45px;
+    margin: 0 -5px; 
+    width: 160px; 
+    padding-left: 20px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Filter*/
+#filter{
+    display: flex;
+    align-items: baseline;
+    margin-top: 32px;
+    width: auto;
+}
+#filter h3{
+    margin-right: 32px;
+}
+
+/*filter button*/
+#filter .fas{
+    padding: 15px;
+    width: 15px;
+    background-color: #deebff;
+    margin:-2px 5px -2px -8px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    color: #0065FC;
+    margin-right: 10px;   
+}
+#filter button {
+    background-color: white;
+    padding: 0px 20px 0px 5px;
+    border: rgb(217, 217, 217) solid;
+    height: 100%;
+    margin-right: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+}
+#filter button:hover{
+    background-color: #0065FC;
+    color: white;
+}
+#filter button:active{
+    background-color: #0065FC;
+    color: white;
+}
+/*filter info text*/
+#filter_info>i{
+    color:#f2f2f2;
+    background-color: #0065FC;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+#filter_info{
+    margin: 35px 0;
+}
+/*general accomodation*/
+#general_accommodation{
+    display: flex;
+}
+#accomodation h2{
+ margin: 40px 20px;
+}
+/*Accomodation*/
+#accomodation{
+    width:60%;
+    height: 650px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-right: 50px;
+    padding: 0 20px;
+}
+/*card accomodation part*/
+#accomodation_card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 27%;
+    height: 200px;
+    border: 5px solid white;
+    box-shadow: 1px 1px 5px black;
+    margin: 10px 10px 10px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card h4{
+    color: black;
+    padding: 3px 5px 0px 5px ;
+    margin: 5px 0;
+}
+.prix{
+    color: black;
+    padding: 5px 10px 0;
+}
+.card:hover{
+    box-shadow: 3px 3px 9px #0065FC
+}
+.star{
+    color: #0065FC;
+    padding: 5px 10px 0;
+}
+
+#accomodation .img{
+    width: 100%;
+    height: 115px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+#accomodation{
+    margin-bottom: 35px;
+}
+
+/* all cards img*/
+        /*i use a background position to center all picture element on the card*/
+.img{
+    background-size: cover;
+    background-position: center center;
+}
+.img img{
+    display:none;
+}
+.img_auberge{
+    background-image:url("../Accomodation/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
+} 
+.img_hotelport{
+    background-image:url("../Accomodation/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
+} 
+.img_hotelmouettes{
+    background-image:url("../Accomodation/reisetopia-B8WIgxA_PFU-unsplash.jpg")
+} 
+.img_hotelmer{
+    background-image:url("../Accomodation/annie-spratt-Eg1qcIitAuA-unsplash.jpg")
+} 
+.img_aubergepanier{
+    background-image:url("../Accomodation/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
+} 
+.img_hotelamina{
+    background-image:url("../Accomodation/febrian-zakaria-M6S1WvfW68A-unsplash.jpg")
+}
+.img_hotelsoleil{
+    background-image:url("../Accomodation/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg")
+}
+.img_chambreleau{
+    background-image: url("../Accomodation/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+.img_hotelbleu{
+    background-image: url("../Accomodation/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+.img_vieuxport{
+    background-image: url("../Activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+.img_fortpomegue{
+    background-image: url("../Activity/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+.img_ilesfrioul{
+    background-image: url("../Activity/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+.img_parcnationnalcalanques{
+    background-image: url("../Activity/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+.img_notredamedelagarde{
+    background-image: url("../Activity/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+.img_parclongchamp{
+    background-image: url("../Activity/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+/*show more in Accomodation part*/
+#show_more a{
+    text-decoration: none;
+    color: black;
+}
+#show_more{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 40px 20px;
+}
+#show_more a:hover{
+    font-size: 25px;
+    color: #0065FC;
+}
+/*Aside popular_accomodation*/
+.card_pop a{
+    text-decoration: none;
+    color: black;
+}
+#pop_title{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+}
+
+aside > div > i {
+    font-size: 24px;
+}
+
+aside{
+    width: 33%;
+    height: 650px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    
+}
+#popular_accomodation{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_pop{   
+    width: 80%;
+    height: 150px;
+    border: 5px solid white;
+    box-shadow: 1px 1px 5px black;
+    margin: 0px 10px 25px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    
+}
+.card_pop a{
+    display: flex;
+}
+.card_pop .img{
+        width: 40%;
+        height: 150px;
+        border-radius: 15px 0px 0px 15px;
+        -webkit-border-radius: 15px 0px 0px 15px;
+        -moz-border-radius: 15px 0px 0px 15px;
+        -ms-border-radius: 15px 0px 0px 15px;
+        -o-border-radius: 15px 0px 0px 15px;
+}
+.popcard_text{
+    width: 55%;
+    height: 150px;
+    margin: 0 20px;
+    padding: 0px 30px 0px 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popcard_text h4{
+    margin-bottom: 5px;
+}
+.star_pop{
+        color: #0065FC;
+        padding-bottom: 5px;
+       
+}
+.card_pop:hover{
+    box-shadow: 3px 3px 9px #0065FC
+}
+/*Activity part*/
+#activity{
+    width: 100%;
+    height: 620px;
+}
+#activity a{
+    text-decoration: none;
+    color: black;
+}
+#activity_card{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+#activity_card > div { /* the 4 columns of picture */
+    width:22%;
+}
+
+#activity article {/*all article in activity part*/
+    margin: 0 0 40px;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -ms-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    box-shadow: 3px 3px 12px #F2F2F2;
 
 }
-/* Corps */
+#activity article:hover{
+    box-shadow: 3px 3px 9px #0065FC
+}
+#activity h3 { /* to make text areas as 50px*/
+    margin:0 auto;
+    padding:14px 20px;
+    
+}
+
+#activity .img{
+    /*default*/width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+/* size of article  activity part*/
+#activity_card > twocard_2 > article {
+    height: 220px;
+}
+
+article#pomegue {
+    height: 280px ;
+}
+article#frioul{
+    height: 160px;
+}
+
+/* size of picture  activity part */
+#activity .one_card .img{
+    height: 430px;
+}
+#pomegue .img{
+    height: 230px;
+}
+#frioul .img{
+    height: 110px;
+}
+
+#activity .twocard_2 .img{
+    height: 170px;
+}
+
 /* Footer */
+footer{
+
+    font-family: 'Raleway', sans-serif;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    align-items: stretch;
+    padding: 20px 12%;
+}
+
+footer>div{
+    width: 31%;
+}
+footer ul{
+    list-style: none;
+    list-style-position: unset;
+    padding: 0px;
+    
+}
+footer li{
+    padding-bottom: 5px;
+}
+
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer li a:hover{
+    color: #0065FC;
+}

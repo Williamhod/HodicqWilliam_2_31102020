@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1080px) {
+  /*i saw some pad as 1040px(with inspect element) so i just put 40px more in case*/
+#bloc_page {
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        margin: auto;
+    }
+body{
+    margin:0;
+}
+/*header*/
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
+#Logo{
+    margin: 0;
+}
+
+nav ul{
+    
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav li,nav div{
+   margin: 0 30px;
+   padding: 0;
+   
+}
+nav a{
+    padding: 0;
+    padding-top: 0;
+}
+nav a:hover{
+    border-bottom: #0065FC solid;
+    border-top: none;
+    padding-top: 0;  
+   
+}
+/*Search*/
+#site-search{
+    width: 40%;
+}
+#filter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*aside top*/
+#general_accommodation{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    
+}
+/*popular Accomodation*/
+aside{
+    width: 100%;
+    margin:30px 0;
+    height: auto;
+}
+.card_pop .img{
+    width: 80%;
+    height: 170px;
+}
+.card_pop{  
+    height: 170px;
+}
+/*Accomodation*/
+#accomodation{
+    width:100%;
+    height: auto;
+    margin: 1px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+#accomodation_card{
+    width: 100%;
+    display: flex;
+}
+.card{
+    width: 40%;
+    height: 270px;
+    text-align: center;
+}
+#accomodation .img{
+    height: 175px;
+}
+
+/*Activity*/
+#activity{
+    width:100%;
+    height: auto;
+}
+#activity_card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+}
+#activity_card > div {
+
+    width: 45%;
+}
+.one_card:nth-child(1)
+{
+    order: 2;
+}
+/*activity overflowing text*/
+#activity_card h3{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*footer*/
+footer{
+padding: 20px 5%;
+}
+}
