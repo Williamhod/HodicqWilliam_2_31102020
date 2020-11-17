@@ -1,5 +1,5 @@
 @media only screen and (max-width: 430px){
-
+/*i saw by inspect element a phone max width as 414px so i injust it a little be more*/
 #bloc_page {
     width: 100%;
     font-family: 'Raleway', sans-serif;
@@ -77,9 +77,6 @@ nav a:hover{
 }
 
 /*filter*/
-#filter{
-
-}
 #filter button{
     margin: 0px 8px 15px 0;
 }
@@ -194,12 +191,4 @@ footer div{
 footer li{
     padding: 5px 0;
 }
-
-
-
-
-
-
-
-
 }

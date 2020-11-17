@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1080px) {
-  
+  /*i saw some pad as 1040px(with inspect element) so i just put 40px more in case*/
 #bloc_page {
         width: 100%;
         font-family: 'Raleway', sans-serif;
@@ -48,7 +48,7 @@ nav a:hover{
 }
 /*Search*/
 #site-search{
-    width: 30%;
+    width: 40%;
 }
 #filter{
     width: 100%;
@@ -117,7 +117,14 @@ aside{
 {
     order: 2;
 }
+/*activity overflowing text*/
+#activity_card h3{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 /*footer*/
 footer{
 padding: 20px 5%;
+}
 }

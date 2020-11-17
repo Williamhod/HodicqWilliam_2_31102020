@@ -9,7 +9,6 @@
 header{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     margin-top: 25px;
 }
 #Logo{
@@ -69,17 +68,16 @@ nav a:active{
 }
 
 #button_search{
-    font-size: 1.4em;
+    font-size: 22px;
     background-color: #0065FC;
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    box-shadow: none;
-    border: none;
-    margin: 0;
-    padding: 4.5px 10px 11.5px 10px;
+    box-shadow: none; 
+    padding:4.75px 10px 11.5px 10px;
     border:1px #0065FC solid;
 }
+
 #button_search::before{
     content:"Rechercher";
 }
@@ -93,7 +91,7 @@ nav a:active{
 #site-search{
     height: 45px;
     margin: 0 -5px; 
-    width: 140px; 
+    width: 160px; 
     padding-left: 20px;
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
@@ -140,9 +138,11 @@ nav a:active{
 }
 #filter button:hover{
     background-color: #0065FC;
+    color: white;
 }
 #filter button:active{
     background-color: #0065FC;
+    color: white;
 }
 /*filter info text*/
 #filter_info>i{
@@ -188,7 +188,7 @@ nav a:active{
     width: 27%;
     height: 200px;
     border: 5px solid white;
-    box-shadow: 3px 3px 12px black;
+    box-shadow: 1px 1px 5px black;
     margin: 10px 10px 10px 10px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -210,7 +210,7 @@ nav a:active{
     padding: 5px 10px 0;
 }
 .card:hover{
-    box-shadow: 3px 3px 12px #0065FC
+    box-shadow: 3px 3px 9px #0065FC
 }
 .star{
     color: #0065FC;
@@ -335,7 +335,7 @@ aside{
     width: 80%;
     height: 150px;
     border: 5px solid white;
-    box-shadow: 3px 3px 12px black;
+    box-shadow: 1px 1px 5px black;
     margin: 0px 10px 25px 10px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -375,7 +375,7 @@ aside{
        
 }
 .card_pop:hover{
-    box-shadow: 3px 3px 12px #0065FC
+    box-shadow: 3px 3px 9px #0065FC
 }
 /*Activity part*/
 #activity{
@@ -407,7 +407,7 @@ aside{
 
 }
 #activity article:hover{
-    box-shadow: 3px 3px 12px #0065FC
+    box-shadow: 3px 3px 9px #0065FC
 }
 #activity h3 { /* to make text areas as 50px*/
     margin:0 auto;
@@ -450,12 +450,7 @@ article#frioul{
 #activity .twocard_2 .img{
     height: 170px;
 }
-/*activity overflowing text*/
-#activity_card h3{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
+
 
 /* Footer */
 footer{
