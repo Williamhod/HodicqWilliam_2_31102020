@@ -1,5 +1,6 @@
 @media only screen and (max-width: 430px){
 /*i saw by inspect element a phone max width as 414px so i injust it a little be more*/
+
 #bloc_page {
     width: 100%;
     font-family: 'Raleway', sans-serif;
@@ -63,10 +64,6 @@ nav a:hover{
     margin: -1.5px 0 0 -10px;
     vertical-align: middle;
     border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
 }
 #button_search::before{
     content:url("../CSS/svg/search.svg");
@@ -182,6 +179,7 @@ article#frioul{
 }
 /*footer*/
 footer{
+    width: 90%;
     display: flex;
     flex-direction: column;
 }
