@@ -181,14 +181,11 @@ nav a:active{
     background-color: white;
     width: 27%;
     height: 200px;
-    border: 5px solid white;
+    padding: 5px;
     box-shadow: 1px 1px 5px black;
     margin: 10px 10px 10px 10px;
     border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+
 }
 .card a{
     text-decoration: none;
@@ -326,7 +323,7 @@ aside{
     width: 80%;
     height: 150px;
     background-color: white;
-    border: 5px solid white;
+    padding: 5px;
     box-shadow: 1px 1px 5px black;
     margin: 0px 10px 25px 10px;
     border-radius: 15px; 
