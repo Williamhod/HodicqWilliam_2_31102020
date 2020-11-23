@@ -61,7 +61,7 @@ nav a:hover{
     width: 45px;
     height: 45px;
     color: white;
-    margin: -1.5px 0 0 -10px;
+    margin-left: -10px;
     vertical-align: middle;
     border-radius: 15px;
 }
@@ -188,5 +188,6 @@ footer div{
 }
 footer li{
     padding: 5px 0;
-}
-}
+}   
+
+}/*end media*/
