@@ -125,7 +125,8 @@ aside{
 }
 /*footer*/
 footer{
-padding: 20px 5%;
+    width: auto;
+padding: 20px 3.5%;
 }
 
 }/*end media*/
