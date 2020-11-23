@@ -382,7 +382,7 @@ aside{
 #activity article {/*all article in activity part*/
     margin: 0 0 40px;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 3px 3px 12px #F2F2F2;
+    box-shadow: 0px 2px 13px #d2d2d2;
 
 }
 #activity article:hover{
